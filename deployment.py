@@ -5,7 +5,7 @@ import pickle
 import praw
 from praw.models import MoreComments
 
-import gensim.models import Doc2Vec
+from gensim.models import Doc2Vec
 from gensim.utils import simple_preprocess
 
 from tensorflow import keras
