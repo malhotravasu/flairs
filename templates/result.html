@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<title>Reddit Flair Predictor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+</style>
+
+<body>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-jumbo"><b>Enter Reddit Post Link</b></h1>
+            <h1 class="w3-xxxlarge w3-text-red"><b>r/india</b></h1>
+            <hr style="width:50px;border:5px solid blue" class="w3-round">
+
+            <form action="/result" method="POST">
+                <p>Enter the r/india Reddit Link/ID for flair detection of the post</p>
+                <label>URL/ID </label>
+                <input type="text" class="form-control" id="urlid" name="urlid" placeholder="Enter Full URL or ID">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <!-- <p>Click the "Submit" button and the form-data will be sent to a page on the server called "/action_page.php".</p> -->
+            <br/>
+            <div>
+                <h3>Predicted Flair: (<b>{{flair}}</b>, {{confidence}})</h3>
+            </div>
+        </div>
+        <hr height = "20px">
+    <!-- End page content -->
+    </div>
+</body>
+
+</html>
