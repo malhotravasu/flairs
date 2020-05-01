@@ -82,11 +82,6 @@ def docs_into_vectors(docs, model):
         embeddings.append(doc_vector)
     return np.array(embeddings)
 
-a = 'http://www.cwi.nl:80/%7Eguido/Python.html'
-b = '/data/Python.html'
-c = 532
-d = u'dkakasdkjdjakdjadjfalskdjfalk'
-
 def url_validator(given_url):
     try:
         result = urlparse(given_url)

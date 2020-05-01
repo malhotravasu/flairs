@@ -16,8 +16,7 @@ def result():
     prediction = get_flair_from_urlids([urlid])
     return render_template(
         'result.html',
-        flair=prediction[0][0],
-        confidence=prediction[1][0]
+        flair=prediction[0]
     )
 
 if __name__ == "__main__":
