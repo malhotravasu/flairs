@@ -1,10 +1,10 @@
-# flairs
+# Flairs
 
-The Data has been scraped.
-Models are already trained and serialized.
-Parameter tuning is complete and document embeddings have been learnt.
-Flask Web App (Backend + Frontend) is complete and working fabulously.
+A Tag/Flair predictor for the subreddit r/India.
 
-The only concern left unresolved is the Heroku Slug size. My complete application after a trim-down compiles to 582MB whereas the maximum allowed Slug size on Heroku is 500MB.
+Document embeddings based on gensim Doc2Vec.
+Multi-Class Logistic Regression classifier used for prediction (built on scikit-learn).
+Web App made using Flask.
+Deployed on Heroku.
 
-Please give me some time to resolve that issue!
+Access the live demo here: https://flairs-midas.herokuapp.com/
